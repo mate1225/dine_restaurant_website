@@ -16,14 +16,20 @@ function App() {
           >
             Home
           </Link>
-          <Link to={"/Booking"} className="rounded-lg bg-red-500 p-3">
+          <Link
+            to={"/dine_restaurant_website/Booking"}
+            className="rounded-lg bg-red-500 p-3"
+          >
             Booking
           </Link>
         </div>
 
         <Routes>
           <Route path="/dine_restaurant_website" element={<Home />} />
-          <Route path="/Booking" element={<Booking />} />
+          <Route
+            path="/dine_restaurant_website/Booking"
+            element={<Booking />}
+          />
         </Routes>
       </BrowserRouter>
     </>
