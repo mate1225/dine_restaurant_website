@@ -8,7 +8,7 @@ import Booking from "./pages/Booking";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/dine_restaurant_website">
         <div className=" flex gap-5">
           <Link
             to={"/dine_restaurant_website"}
