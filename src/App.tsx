@@ -10,7 +10,10 @@ function App() {
     <>
       <BrowserRouter>
         <div className=" flex gap-5">
-          <Link to={"/"} className="rounded-lg bg-red-500 p-3">
+          <Link
+            to={"/dine_restaurant_website"}
+            className="rounded-lg bg-red-500 p-3"
+          >
             Home
           </Link>
           <Link to={"/Booking"} className="rounded-lg bg-red-500 p-3">
@@ -19,7 +22,7 @@ function App() {
         </div>
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/dine_restaurant_website" element={<Home />} />
           <Route path="/Booking" element={<Booking />} />
         </Routes>
       </BrowserRouter>
