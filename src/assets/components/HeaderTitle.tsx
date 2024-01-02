@@ -25,7 +25,8 @@ export default function HeaderTitle(props: {
           Experience our seasonal menu in beautiful country surroundings. Eat
           the freshest produce from the comfort of our farmhouse.
         </p>
-        <BookingButton divStyle="mb-[9.5rem] mx-[2.56rem] " />
+
+        <BookingButton divStyle="pb-[9.5rem] mx-[2.56rem] " />
       </div>
     </>
   );
