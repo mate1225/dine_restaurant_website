@@ -8,9 +8,7 @@ export default function Home() {
         <header className=" ">
           <img src={heroBgMobile} className=" absolute " />
           <HeaderTitle
-            title="Exquisite dining since 1989"
-            description="Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse."
-            divStyle="px-[1.5rem] top-[14rem] absolute"
+            divStyle="px-[1.5rem] top-[18rem] absolute"
             logoStyle="max-w-[82.4px] mb-[36px] mt-[0.75rem]"
             titleStyle="mb-[1.31rem]"
             descriptionStyle="mb-[3.31rem] "

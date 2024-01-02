@@ -3,36 +3,29 @@ import BookingButton from "./BookingButton";
 
 export default function HeaderTitle(props: {
   logoStyle: string;
-  title: string;
-  description: string;
   divStyle: string;
   titleStyle: string;
   descriptionStyle: string;
 }) {
-  const {
-    logoStyle,
-    title,
-    description,
-    divStyle,
-    titleStyle,
-    descriptionStyle,
-  } = props;
+  const { logoStyle, divStyle, titleStyle, descriptionStyle } = props;
   return (
     <>
       <div
-        className={`${divStyle} flex  flex-col items-center bg-black text-center text-PureWhite`}
+        className={`${divStyle}   flex-col items-center bg-[#0e0d0d] text-center text-PureWhite`}
       >
-        <img src={logo} className={`${logoStyle}`} />
+        <div className=" flex justify-center">
+          <img src={logo} className={`${logoStyle}`} />
+        </div>
+
         <div className={`mx-8  text-[2rem] font-light ${titleStyle}`}>
-          <h2>{title}</h2>
+          <h2>Exquisite dining since 1989</h2>
         </div>
 
         <p className={`${descriptionStyle} text-[1rem] font-normal `}>
-          {description}
+          Experience our seasonal menu in beautiful country surroundings. Eat
+          the freshest produce from the comfort of our farmhouse.
         </p>
-        <div>
-          <BookingButton divStyle="mb-[9.5rem] " />
-        </div>
+        <BookingButton divStyle="mb-[9.5rem] mx-[2.56rem] " />
       </div>
     </>
   );
