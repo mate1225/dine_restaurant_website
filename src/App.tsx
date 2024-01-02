@@ -14,7 +14,7 @@ function App() {
             Home
           </Link>
           <Link to={"/Booking"} className="rounded-lg bg-red-500 p-3">
-            Booking
+            BOOK A TABLE
           </Link>
         </div> */}
 
