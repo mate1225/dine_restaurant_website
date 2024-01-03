@@ -7,7 +7,10 @@ export default function HighlightComponent(props: {
   const { img, title, text, style } = props;
   return (
     <div className=" pb-6 ">
-      <img src={img} />
+      <div className=" flex justify-center">
+        <img src={img} />
+      </div>
+
       <h2 className=" mb-[0.38rem] mt-[2rem] text-[1.25rem] font-bold">
         {title}
       </h2>

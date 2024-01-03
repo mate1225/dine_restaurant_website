@@ -1,4 +1,4 @@
-export default function BookingButton(props: { divStyle: string }) {
+export default function BookingButton_White(props: { divStyle: string }) {
   const { divStyle } = props;
   return (
     <div className={` grid ${divStyle}`}>

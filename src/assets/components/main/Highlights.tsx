@@ -1,11 +1,11 @@
 //components
-import Description from "./Description";
+import Description from "../Description";
 import HighlightComponent from "./HighlightComponent";
 //images
-import imagesDecoration from "../images/images decoration.svg";
-import salmon_mobile from "../images/homepage/salmon-mobile.jpg";
-import beef_mobile from "../images/homepage/beef-mobile.jpg";
-import chocolate_mobile from "../images/homepage/chocolate-mobile.jpg";
+import imagesDecoration from "../../images/images decoration.svg";
+import salmon_mobile from "../../images/homepage/salmon-mobile.jpg";
+import beef_mobile from "../../images/homepage/beef-mobile.jpg";
+import chocolate_mobile from "../../images/homepage/chocolate-mobile.jpg";
 
 export default function Highlights() {
   return (
@@ -18,7 +18,7 @@ export default function Highlights() {
         title="A few highlights from our menu"
         text="We cater for all dietary requirements, but here’s a glimpse at some of
         our diner’s favourites. Our menu is revamped every season."
-        style="pb-[5.31rem]"
+        style="pb-[5.31rem] mt-[2.25rem]"
       />
       <HighlightComponent
         img={salmon_mobile}

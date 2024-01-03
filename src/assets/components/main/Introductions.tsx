@@ -1,4 +1,4 @@
-import imagesDecoration from "../images/images decoration.svg";
+import imagesDecoration from "../../images/images decoration.svg";
 
 export default function Introductions(props: {
   title: string;

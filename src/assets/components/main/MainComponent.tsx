@@ -1,7 +1,10 @@
+//components
 import Introductions from "./Introductions";
-import enjoyable_place_mobile from "../images/homepage/enjoyable-place-mobile.jpg";
-import locally_sourced_mobile from "../images/homepage/locally-sourced-mobile.jpg";
 import Highlights from "./Highlights";
+//images
+import enjoyable_place_mobile from "../../images/homepage/enjoyable-place-mobile.jpg";
+import locally_sourced_mobile from "../../images/homepage/locally-sourced-mobile.jpg";
+import FamilyGathering from "./FamilyGathering";
 
 export default function MainComponent() {
   return (
@@ -21,6 +24,7 @@ export default function MainComponent() {
           img={locally_sourced_mobile}
         />
         <Highlights />
+        <FamilyGathering />
       </main>
     </>
   );

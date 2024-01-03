@@ -5,8 +5,8 @@ export default function Description(props: {
 }) {
   const { title, text, style } = props;
   return (
-    <div className={style}>
-      <h2 className=" mb-[0.81rem] mt-[2.25rem] text-[2rem] font-bold leading-[2.5rem]">
+    <div className={`${style} mx-6 flex flex-col items-center text-center`}>
+      <h2 className=" mb-[0.81rem]  text-[2rem] font-bold leading-[2.5rem]">
         {title}
       </h2>
       <p>{text}</p>

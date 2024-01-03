@@ -1,5 +1,7 @@
-import logo from "../images/logo.svg";
-import BookingButton from "./BookingButton";
+//components
+import BookingButton from "../BookingButton_White";
+//images
+import logo from "../../images/logo.svg";
 
 export default function HeaderTitle(props: {
   logoStyle: string;
