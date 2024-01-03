@@ -24,7 +24,7 @@ export default {
       desktop: "1440px",
     },
     backgroundImage: {
-      footerImage: "url(./src/assets/images/homepage/ready-bg-mobile.jpg)",
+      footerImage: "url(/src/assets/images/homepage/ready-bg-mobile.jpg)",
     },
   },
   plugins: [],
