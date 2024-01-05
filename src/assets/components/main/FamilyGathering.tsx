@@ -1,8 +1,8 @@
-import EventsButton from "./EventsButton";
 //images
 import family_gathering_mobile from "../../images/homepage/family-gathering-mobile.jpg";
 import Description from "../Description";
 import BookingButton_Black from "../BookingButton_Black";
+import EventsButtons from "../EventButtons";
 
 export default function FamilyGathering() {
   return (
@@ -13,23 +13,13 @@ export default function FamilyGathering() {
       </div>
 
       <div className=" flex flex-col items-center ">
-        <EventsButton
-          text="FAMILY GATHERING"
-          style="mb-[1rem]"
-          LineVisibility=""
-          buttonStyle=""
-        />
-        <EventsButton
-          text="SPECIAL EVENTS"
-          style="mb-[1rem]"
-          LineVisibility="hidden"
-          buttonStyle="opacity-[0.5]"
-        />
-        <EventsButton
-          text="SOCIAL EVENTS"
-          style=""
-          LineVisibility="hidden"
-          buttonStyle="opacity-[0.5]"
+        <EventsButtons
+          FamilyLine=""
+          SpecialLine="hidden"
+          SocialLine="hidden"
+          FamilyButtonStyle=""
+          SpecialButtonStyle="opacity-[0.5]"
+          SocialButtonStyle="opacity-[0.5]"
         />
       </div>
       <Description

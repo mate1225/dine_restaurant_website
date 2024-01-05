@@ -8,13 +8,15 @@ export default function EventsButton(props: {
 }) {
   const { style, buttonStyle, text, LineVisibility } = props;
   return (
-    <div className={` ${style}`}>
-      <button
-        className={`text-[1.0625rem] font-semibold text-GrayText  ${buttonStyle}`}
-      >
-        {text}
-      </button>
-      <div className={LineVisibility}>
+    <div className={` ${style}   `}>
+      <div>
+        <button
+          className={`text-[1.0625rem] font-semibold text-GrayText  ${buttonStyle}`}
+        >
+          {text}
+        </button>
+      </div>
+      <div className={`${LineVisibility} `}>
         <Line />
       </div>
     </div>
