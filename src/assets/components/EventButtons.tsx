@@ -7,6 +7,11 @@ export default function EventsButtons(props: {
   FamilyButtonStyle: string;
   SpecialButtonStyle: string;
   SocialButtonStyle: string;
+  SocialLineWidth: string;
+  SpecialLineWidth: string;
+  FamilyLineWidth: string;
+  specialEventStyle: string;
+  socialEventStyle: string;
 }) {
   const {
     FamilyLine,
@@ -15,27 +20,36 @@ export default function EventsButtons(props: {
     FamilyButtonStyle,
     SpecialButtonStyle,
     SocialButtonStyle,
+    FamilyLineWidth,
+    SpecialLineWidth,
+    SocialLineWidth,
+    specialEventStyle,
+    socialEventStyle,
   } = props;
   return (
-    <>
+    <div className=" flex flex-col items-start justify-start">
       <EventsButton
         text="FAMILY GATHERING"
         style="mb-[1rem]"
-        LineVisibility={FamilyLine}
+        LineStyle={FamilyLine}
         buttonStyle={FamilyButtonStyle}
+        lineWidth={FamilyLineWidth}
       />
       <EventsButton
         text="SPECIAL EVENTS"
-        style="mb-[1rem]"
-        LineVisibility={SpecialLine}
+        style={`mb-[1rem] ${specialEventStyle}`}
+        LineStyle={SpecialLine}
         buttonStyle={SpecialButtonStyle}
+        lineWidth={SpecialLineWidth}
       />
+
       <EventsButton
         text="SOCIAL EVENTS"
-        style=""
-        LineVisibility={SocialLine}
+        style={`${socialEventStyle}`}
+        LineStyle={SocialLine}
         buttonStyle={SocialButtonStyle}
+        lineWidth={SocialLineWidth}
       />
-    </>
+    </div>
   );
 }

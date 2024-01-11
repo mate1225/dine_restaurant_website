@@ -20,6 +20,11 @@ export default function FamilyGathering() {
           FamilyButtonStyle=""
           SpecialButtonStyle="opacity-[0.5]"
           SocialButtonStyle="opacity-[0.5]"
+          FamilyLineWidth="w-[3rem]"
+          SocialLineWidth=""
+          SpecialLineWidth=""
+          specialEventStyle=""
+          socialEventStyle=""
         />
       </div>
       <Description
