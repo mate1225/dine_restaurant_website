@@ -3,11 +3,10 @@ import Line from "./Line";
 export default function EventsButton(props: {
   text: string;
   style: string;
-  LineStyle: string;
   buttonStyle: string;
   lineWidth: string;
 }) {
-  const { style, buttonStyle, text, LineStyle, lineWidth } = props;
+  const { style, buttonStyle, text, lineWidth } = props;
   return (
     <div className={`${style} `}>
       <div>
@@ -17,7 +16,7 @@ export default function EventsButton(props: {
           {text}
         </button>
       </div>
-      <div className={`${LineStyle}  `}>
+      <div>
         <Line lineWidth={lineWidth} />
       </div>
     </div>

@@ -1,4 +1,7 @@
 import imagesDecoration from "../../images/images decoration.svg";
+import lines from "../../images/patterns/pattern-lines.svg";
+import pattern_curve_top_right from "../../images/patterns/pattern-curve-top-right.svg";
+import pattern_curve_top_left from "../../images/patterns/pattern-curve-top-left.svg";
 
 export default function Introductions(props: {
   title: string;
@@ -7,14 +10,59 @@ export default function Introductions(props: {
   mobileImg: string;
   tabletImg: string;
   desktopImg: string;
+  linesStyle: string;
+  rightCurveStyle: string;
+  leftCurveStyle: string;
 }) {
-  const { title, text, style, mobileImg, tabletImg, desktopImg } = props;
+  const {
+    title,
+    text,
+    style,
+    mobileImg,
+    tabletImg,
+    desktopImg,
+    linesStyle,
+    rightCurveStyle,
+    leftCurveStyle,
+  } = props;
   return (
     <>
       <div
         className={` flex  flex-col items-center justify-center pb-[6.31rem] text-center text-EbonyClay ${style}`}
       >
-        <div>
+        <div className=" relative">
+          <div>
+            {/* line */}
+            <img
+              src={lines}
+              className={`absolute right-[-5rem] top-[15rem] hidden tablet:block ${linesStyle}`}
+            />
+            {/* top */}
+            <div className=" hidden tablet:block desktop:hidden">
+              <img
+                src={pattern_curve_top_right}
+                className={`absolute left-[-18rem] top-[12rem] z-[-1]  h-[20rem] 
+                 ${rightCurveStyle}`}
+              />
+              <img
+                src={pattern_curve_top_left}
+                className={` absolute left-[-53.8rem] top-[12rem] z-[-1] h-[20rem]
+                 ${rightCurveStyle}`}
+              />
+            </div>
+            {/* bottom */}
+            <div className=" hidden tablet:block desktop:hidden">
+              <img
+                src={pattern_curve_top_left}
+                className={`absolute left-[18rem] top-[29.5rem]   z-[-1] h-[20rem]   ${leftCurveStyle} `}
+              />
+              <img
+                src={pattern_curve_top_right}
+                className={`absolute left-[53.85rem] top-[29.5rem]   z-[-1] h-[20rem]   ${leftCurveStyle} `}
+              />
+            </div>
+          </div>
+
           <img src={mobileImg} className="mb-[3.5rem] tablet:hidden  " />
           <img
             src={tabletImg}
@@ -39,4 +87,10 @@ export default function Introductions(props: {
     </>
   );
 }
-/* tablet:hidden */
+
+{
+  /* <img
+            src={pattern_curve_top_right}
+            className=" absolute left-[-24rem] top-[55.5rem] z-0 hidden h-[20rem] w-[49rem]  tablet:block "
+          /> */
+}

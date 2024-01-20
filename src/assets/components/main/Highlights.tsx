@@ -20,28 +20,33 @@ export default function Highlights() {
         our diner’s favourites. Our menu is revamped every season."
         style="pb-[5.31rem] mt-[2.25rem]"
       />
-      <HighlightComponent
-        img={salmon_mobile}
-        title="Seared Salmon Fillet"
-        text="Our locally sourced salmon served 
+      <div className="  ">
+        <HighlightComponent
+          img={salmon_mobile}
+          title="Seared Salmon Fillet"
+          text="Our locally sourced salmon served 
 with a refreshing buckwheat summer salad."
-        style="border-b-[0.0625rem] border-solid border-white"
-      />
-      <HighlightComponent
-        img={beef_mobile}
-        title="Rosemary Filet Mignon"
-        text="Our prime beef served to your taste 
+          style=" border-b-[0.0625rem] border-solid border-white"
+          divStyle="tablet:border-b-[0.0625rem] tablet:border-solid tablet:border-white tablet:border-opacity-[0.1494] tablet:mb-[1.44rem] border-none"
+        />
+        <HighlightComponent
+          img={beef_mobile}
+          title="Rosemary Filet Mignon"
+          text="Our prime beef served to your taste 
         with a delicious choice of seasonal 
         sides."
-        style="border-b-[0.0625rem] border-solid border-white"
-      />
-      <HighlightComponent
-        img={chocolate_mobile}
-        title="Summer Fruit Chocolate Mousse"
-        text="Creamy mousse combined with 
+          style="border-b-[0.0625rem] border-solid border-white"
+          divStyle="tablet:border-b-[0.0625rem] tablet:border-solid tablet:border-white tablet:border-opacity-[0.1494] tablet:mb-[1.44rem] border-none"
+        />
+        <HighlightComponent
+          img={chocolate_mobile}
+          title="Summer Fruit Chocolate Mousse"
+          text="Creamy mousse combined with 
         summer fruits and dark chocolate shavings."
-        style=""
-      />
+          style=""
+          divStyle="tablet:pb-[6rem]"
+        />
+      </div>
     </section>
   );
 }

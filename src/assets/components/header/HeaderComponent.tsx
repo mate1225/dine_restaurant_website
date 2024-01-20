@@ -15,7 +15,7 @@ export default function HeaderComponent() {
           <div className=" flex justify-center">
             <img
               src={logo}
-              className="mb-[36px] mt-[0.75rem] max-w-[82.4px] tablet:hidden"
+              className="mb-[36px] mt-[0.75rem] max-w-[82.4px] "
             />
           </div>
 
@@ -28,7 +28,7 @@ export default function HeaderComponent() {
             the freshest produce from the comfort of our farmhouse.
           </p>
 
-          <BookingButton_White divStyle="pb-[9.5rem] mx-[2.56rem] tablet:mx-[14rem] " />
+          <BookingButton_White divStyle="pb-[9.5rem] tablet:mx-[14rem] " />
         </div>
       </header>
     </>
