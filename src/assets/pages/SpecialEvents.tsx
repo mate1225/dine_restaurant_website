@@ -17,11 +17,11 @@ export default function SpecialEvents() {
         FamilyButtonStyle="opacity-[0.5]"
         FamilyLineWidth=""
         specialEventStyle=""
-        SpecialButtonStyle="opacity-[0.5]"
-        SpecialLineWidth=""
+        SpecialButtonStyle=""
+        SpecialLineWidth="w-[3rem]"
         socialEventStyle=""
-        SocialButtonStyle=""
-        SocialLineWidth="w-[3rem]"
+        SocialButtonStyle="opacity-[0.5]"
+        SocialLineWidth=""
       />
     </section>
   );
